@@ -7,10 +7,57 @@ void setup() {
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
-  fill(255,255,255);
+  fill(255,255,255,100);
   strokeWeight(1);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Project Goes Here
+  
+  //fire
+  var renameThis = function (x,y,sx,sy,r,fc,sc,sw){
+  /* Created with https://www.kahnacademy.org/cs/curvevertexxy/4922655547326464 by Troy Cook */
+  pushMatrix();
+  pushStyle();
+  translate(x,y);
+  scale(sx,sy);
+  rotate(r);
+  fill(252, 78, 3);
+  stroke(sc);
+  strokeWeight(sw);
+  beginShape();
+  curveVertex(14,-66); curveVertex(34,41); curveVertex(400,-700); curveVertex(470,700); curveVertex(-300, 100)
+  endShape()
+  popStyle();
+  popMatrix();
+  };
+ 
+  
+  fill(153, 91, 49)
+  rect(210, 370, 200, 70, 70);
+  noStroke()
+  
+  fill(227, 126, 18)
+  ellipse(100, 140, 150, 230);
+  ellipse(100, 230, 180, 210);
+  rect(130, 120, 100, 50, 30);
+  rect(120, 140, 100, 50, 30);
+  fill(38, 35, 31);
+  ellipse(230, 150, 65, 45);
+  strokeWeight(2);
+  fill(237,227, 213);
+  stroke(0,0,0)
+  
+  //right eye
+  ellipse(150, 90, 70, 90);
+  ellipse(90, 100, 70, 90);
+  fill(38, 35, 31)
+  ellipse(170, 100, 43, 60);
+  ellipse(95, 110, 43, 58);
+  //cup
+  fill(219, 204, 162)
+  quad(230, 310, 330, 310, 325, 380, 235, 380);
+  
+  
+  noFill();
   
 
   
