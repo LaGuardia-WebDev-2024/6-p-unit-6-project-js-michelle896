@@ -16,28 +16,46 @@ Select ONE Additional
 <!DOCTYPE html>
 <html>
   <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Unit 6 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
+    <style>
+      body{
+        font-family: "Special Elite", system-ui;
+        background image: linear-graident(
+        to bottom right,
+        #0e4710,
+        #1b691e,
+        #2a872d,
+        #1b691e,
+        #0e4710
+        );
+        
+      }
+    </style>
   </head>
-
   <body>
     <div class="container">
       <div>
-        <h2 id="start">How it started.</h2>
+        <h1 id="start">How it<em> started.</em></h1>
         <img
           class="pic" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Chill_guy_original_artwork.jpg/220px-Chill_guy_original_artwork.jpg"
-        />
+             />
       </div>
       <div>
-        <h2 id="end">How it ended.</h2>
+        <h2 id="end">How it<em> ended.</em>
+           </h2>
         <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
       </div>
     </div>
   </body>
-</html>
+</html> 
+
+
 
 <!--- Taken From Khan Academy Intro to JS: Drawing & Animation --->
